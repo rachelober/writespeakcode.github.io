@@ -4408,19 +4408,27 @@ ul.people_list {
 .schedule .day_schedule li a:active, .schedule .day_schedule li a:focus {
   color: #971f2d;
   outline: none; }
-/* line 12, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 16, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .schedule .event {
   border-left: 10px solid #D84455;
+  background-color: #fbedee;
   padding: .5em;
   margin: 1em 0; }
-  /* line 17, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  /* line 22, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
   .schedule .event:nth-child(even) {
     border-left-color: #8B1E2B; }
-  /* line 21, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  /* line 26, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  .schedule .event.talk, .schedule .event.panel {
+    border-left-color: #237BA5;
+    background-color: #e7f4fa; }
+    /* line 30, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+    .schedule .event.talk:nth-child(even), .schedule .event.panel:nth-child(even) {
+      border-left-color: #256A8B; }
+  /* line 35, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
   .schedule .event h5 {
     margin-top: 0;
     margin-bottom: .5em; }
-/* line 28, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 42, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .schedule #content .schedules {
   /*h2 {*/
   /*border-top: $section-border;*/
@@ -4430,14 +4438,14 @@ ul.people_list {
   /*margin-top: 1em;*/
   /*}*/
   /*}*/ }
-  /* line 29, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  /* line 43, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
   .schedule #content .schedules h2, .schedule #content .schedules h3 {
     margin-bottom: 0;
     color: #237BA5; }
-  /* line 34, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  /* line 48, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
   .schedule #content .schedules h3 {
     margin-top: 0; }
-  /* line 47, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  /* line 61, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
   .schedule #content .schedules header {
     margin-top: 3em;
     padding-bottom: 1em;
@@ -4454,58 +4462,65 @@ ul.people_list {
   .schedule #content .schedules .more_info:active, .schedule #content .schedules .more_info:focus {
     color: black;
     outline: none; }
+  /* line 71, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  .schedule #content .schedules .actions {
+    float: left;
+    color: #9b9092; }
+  /* line 76, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+  .schedule #content .schedules .details {
+    margin-left: 50px; }
 
-/* line 60, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 83, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .dots {
   margin-left: 60px;
   margin-top: 20px;
   list-style-type: none; }
 
-/* line 66, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 89, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .dots li {
   padding-bottom: 30px;
   display: block;
   border-left: 2px solid #D84455; }
 
-/* line 72, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 95, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .dots li:last-child {
   border-left: 2px solid #faf9f9; }
 
-/* line 76, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 99, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .fa-circle:before {
   margin-left: -9px;
   color: #D84455;
   font-size: 19px;
   line-height: 0px; }
 
-/* line 83, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 106, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .fa-circle p {
   margin-top: -15px;
   margin-bottom: 20px;
   padding: 0px 25px;
   color: #D84455; }
 
-/* line 90, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 113, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .fa-circle p a {
   color: #D84455; }
 
-/* line 94, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 117, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .fa-circle p a:hover {
   color: #D84455;
   opacity: .5; }
 
-/* line 99, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 122, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .fa-circle p a:visited {
   color: #D84455; }
 
-/* line 103, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 126, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .schedule_container {
   max-width: 600px;
   margin: 25px auto;
   border: solid 1px lightgrey;
   border-radius: 4px; }
 
-/* line 110, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 133, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .schedule_container h2 {
   text-align: center;
   padding: 25px;
@@ -4513,7 +4528,7 @@ ul.people_list {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 40px; }
 
-/* line 118, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
+/* line 141, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_schedule.scss */
 .schedule_container h3 {
   padding: 20px 30px;
   color: #D84455;
@@ -4542,9 +4557,10 @@ ul.people_list {
   border: 3px dashed #DEDA5C;
   border-color: #98cbe4;
   min-height: 125px;
+  text-align: center;
   padding: .5em;
   margin-bottom: 2em; }
-  /* line 40, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+  /* line 41, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
   .conference.sponsors .sponsors .sponsor img {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -4557,23 +4573,23 @@ ul.people_list {
     border: 2px solid #237BA5;
     height: 100px;
     background-color: white; }
-/* line 49, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+/* line 50, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
 .conference.sponsors .sponsors.platinum .sponsor {
   border-color: #D84455;
   background-color: #e78e99; }
-  /* line 53, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+  /* line 54, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
   .conference.sponsors .sponsors.platinum .sponsor img {
     height: 200px;
     border-color: #D84455; }
-/* line 61, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+/* line 62, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
 .conference.sponsors .sponsors.gold .sponsor {
   border-color: #DEDA5C;
   background-color: #efedb1; }
-  /* line 65, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+  /* line 66, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
   .conference.sponsors .sponsors.gold .sponsor img {
     border-color: #DEDA5C; }
-/* line 69, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
-.conference.sponsors .sponsors.bronze, .conference.sponsors .sponsors.childcare {
+/* line 70, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+.conference.sponsors .sponsors:not(.gold):not(.platinum):not(.silver) {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -4597,8 +4613,8 @@ ul.people_list {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify; }
-  /* line 74, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
-  .conference.sponsors .sponsors.bronze .sponsor, .conference.sponsors .sponsors.childcare .sponsor {
+  /* line 75, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+  .conference.sponsors .sponsors:not(.gold):not(.platinum):not(.silver) .sponsor {
     -webkit-flex-basis: 15em;
     -moz-flex-basis: 15em;
     flex-basis: 15em;
@@ -4613,8 +4629,8 @@ ul.people_list {
     text-align: center;
     height: auto;
     margin: 1em; }
-    /* line 83, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
-    .conference.sponsors .sponsors.bronze .sponsor p, .conference.sponsors .sponsors.childcare .sponsor p {
+    /* line 84, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_sponsors.scss */
+    .conference.sponsors .sponsors:not(.gold):not(.platinum):not(.silver) .sponsor p {
       display: none; }
 
 /* line 2, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_testimonials.scss */
