@@ -2372,6 +2372,10 @@ a {
     outline: none; }
 
 /* line 148, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+b {
+  font-weight: 900; }
+
+/* line 152, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
 hr {
   border-bottom: 1px solid #9b9092;
   border-left: none;
@@ -2379,13 +2383,13 @@ hr {
   border-top: none;
   margin: 1.5em 0; }
 
-/* line 156, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+/* line 160, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
 img,
 picture {
   margin: 0;
   max-width: 100%; }
 
-/* line 162, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+/* line 166, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
 blockquote {
   border-left: 2px solid #9b9092;
   color: #5a5153;
@@ -2393,26 +2397,31 @@ blockquote {
   padding-left: 0.75em;
   font-style: italic; }
 
-/* line 170, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+/* line 174, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
 cite {
   color: #75696c;
   font-style: italic; }
-  /* line 174, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+  /* line 178, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
   cite:before {
     content: "\2014 \00A0"; }
 
-/* line 179, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+/* line 183, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
 .callout-primary, .callout-accent, .callout {
   font-weight: bold;
   font-size: 1.2em; }
 
-/* line 183, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+/* line 187, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
 .callout-primary {
   color: #D84455; }
 
-/* line 184, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+/* line 188, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
 .callout-accent {
   color: #237BA5; }
+
+/* line 191, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+.details {
+  color: #322D2E;
+  font-weight: normal; }
 
 /* line 1, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_forms.scss */
 fieldset {
@@ -2532,14 +2541,29 @@ ol {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-/* line 20, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
+  /* line 19, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
+  ul.breadcrumbs,
+  ol.breadcrumbs {
+    text-align: center;
+    margin-bottom: 1.5em; }
+    /* line 23, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
+    ul.breadcrumbs li,
+    ol.breadcrumbs li {
+      display: inline-block; }
+      /* line 26, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
+      ul.breadcrumbs li:not(:last-child):after,
+      ol.breadcrumbs li:not(:last-child):after {
+        content: '/';
+        margin: 0 0.75em; }
+
+/* line 34, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
 dl {
   margin-bottom: 0.75em; }
-  /* line 23, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
+  /* line 37, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
   dl dt {
     font-weight: bold;
     margin-top: 0.75em; }
-  /* line 28, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
+  /* line 42, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_lists.scss */
   dl dd {
     margin: 0; }
 
@@ -2906,7 +2930,7 @@ body {
     color: #971f2d;
     outline: none; }
   /* line 13, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
-  .blog #main img {
+  .blog #main .post-img {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -2920,7 +2944,7 @@ body {
     margin: 1em auto 0 auto;
     border: 3px solid #237BA5; }
     /* line 20, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
-    .blog #main img + small {
+    .blog #main .post-img + small {
       text-align: center;
       width: 100%;
       display: inline-block;
@@ -3091,6 +3115,45 @@ body {
       border-top: none;
       padding-top: .5em; }
 
+/* line 140, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+.blog #content .conference-speaker {
+  min-height: 500px;
+  height: auto;
+  margin: 2em; }
+  /* line 147, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+  .blog #content .conference-speaker img {
+    height: 300px;
+    margin: 0 2em 2em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 147, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+      .blog #content .conference-speaker img {
+        float: left; }
+        /* line 154, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+        .blog #content .conference-speaker img.round {
+          float: right; } }
+  /* line 158, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+  .blog #content .conference-speaker p {
+    padding: 2em; }
+  /* line 162, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+  .blog #content .conference-speaker h2 {
+    margin: 0.5em 1em; }
+  /* line 166, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+  .blog #content .conference-speaker ul.social {
+    margin-top: -2em;
+    text-align: center;
+    font-size: .8em; }
+    /* line 172, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+    .blog #content .conference-speaker ul.social li {
+      display: inline-block;
+      padding: 0 2em; }
+    /* line 177, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+    .blog #content .conference-speaker ul.social a {
+      font-size: 2.25em; }
+
+/* line 182, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_blog.scss */
+p.buy {
+  text-align: center; }
+
 /* line 1, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 #main.conference, #main.sponsors {
   background-color: #256A8B; }
@@ -3172,55 +3235,49 @@ body {
 .conference_layout .breadcrumbs.write li.write a:active, .conference_layout .breadcrumbs.write li.write a:focus, .conference_layout .breadcrumbs.speak li.speak a:active, .conference_layout .breadcrumbs.speak li.speak a:focus, .conference_layout .breadcrumbs.code li.code a:active, .conference_layout .breadcrumbs.code li.code a:focus {
   color: #971f2d;
   outline: none; }
-/* line 81, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
-.conference_layout .breadcrumbs li {
-  display: inline-block; }
-  /* line 84, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
-  .conference_layout .breadcrumbs li:not(:last-child):after {
-    content: '/'; }
-/* line 91, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 83, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 .conference_layout.sub_page .hero {
   font-size: .8em;
   padding-bottom: 62px; }
-  /* line 92, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+  /* line 84, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
   .conference_layout.sub_page .hero .details, .conference_layout.sub_page .hero .header-break {
     display: none; }
   @media screen and (min-width: 53.75em) {
-    /* line 91, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+    /* line 83, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
     .conference_layout.sub_page .hero {
       padding-bottom: 52px; } }
-  /* line 100, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+  /* line 92, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
   .conference_layout.sub_page .hero h1 {
     font-family: "proxima-nova-extra-condensed";
     font-weight: 700;
     font-style: normal; }
     @media screen and (min-width: 53.75em) {
-      /* line 100, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+      /* line 92, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
       .conference_layout.sub_page .hero h1 {
         font-size: 2.25em; } }
-  /* line 105, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+  /* line 97, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
   .conference_layout.sub_page .hero h2 {
     font-family: "proxima-nova-extra-condensed";
     font-weight: 500;
     font-style: normal; }
     @media screen and (min-width: 53.75em) {
-      /* line 105, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+      /* line 97, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
       .conference_layout.sub_page .hero h2 {
         font-size: 2em; } }
-/* line 112, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 104, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 .conference_layout.sub_page #content h2 {
   margin: 0 auto 1em auto; }
-  /* line 115, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+  /* line 107, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
   .conference_layout.sub_page #content h2 .fa, .conference_layout.sub_page #content h2 blockquote, .conference_layout.sub_page #content h2 .code-icon, .conference_layout.sub_page #content h2 .speak-icon, .conference_layout.sub_page #content h2 .write-icon, .conference_layout.sub_page #content h2 .footer .footer-logo, .footer .conference_layout.sub_page #content h2 .footer-logo {
     padding: 0 .5em; }
-/* line 120, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 112, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 .conference_layout.sub_page #content .themes {
   color: #D84455;
   margin-bottom: 1em; }
-/* line 125, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 117, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 .conference_layout.sub_page #content .credits {
   margin-top: 1em; }
-/* line 132, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 124, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 .conference_layout .developer-definition {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -3234,11 +3291,11 @@ body {
   background-color: #efedb1;
   padding: .5em;
   border: 1px solid #9b9092; }
-/* line 140, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 132, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 .conference_layout a.small {
   font-size: .8em;
   color: #faf9f9; }
-  /* line 144, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+  /* line 136, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
   .conference_layout a.small, .conference_layout a.small:hover, .conference_layout a.small:linked, .conference_layout a.small:visited {
     color: #faf9f9; }
 
@@ -3254,14 +3311,14 @@ body {
 #main.scholarships #content .breadcrumbs li a:active, #main.scholarships #content .breadcrumbs li a:focus {
   color: #971f2d;
   outline: none; }
-/* line 151, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 143, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 #main.scholarships #content .scholarship {
   margin: 3em 1em 1em;
   text-align: left; }
-  /* line 155, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+  /* line 147, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
   #main.scholarships #content .scholarship h2 {
     margin-bottom: .5em; }
-/* line 160, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
+/* line 152, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_conference.scss */
 #main.scholarships #content .closed {
   margin-top: 5em;
   border-top: 3px dashed #DEDA5C; }
@@ -3322,17 +3379,54 @@ body {
     list-style-type: disc;
     margin-left: 1em;
     padding-left: .5em; }
-  /* line 6, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+  /* line 9, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
   .events .workshop h5 {
     padding-bottom: .5em; }
-/* line 12, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
-.events .past-workshops li {
+/* line 16, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+.events .workshops.upcoming-workshops li, .events .workshops.past-workshops li {
   margin-bottom: .5em;
   padding: .5em;
   border-left: 10px solid #D84455; }
-  /* line 18, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
-  .events .past-workshops li:nth-child(even) {
+  /* line 21, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+  .events .workshops.upcoming-workshops li:nth-child(even), .events .workshops.past-workshops li:nth-child(even) {
     border-left-color: #e78e99; }
+/* line 29, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+.events .workshops .callout-primary a, .events .workshops .callout-primary a:hover, .events .workshops .callout-primary a:visited {
+  color: #D84455;
+  text-decoration: none; }
+/* line 34, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+.events .workshops .callout-primary a:hover {
+  color: #971f2d;
+  text-decoration: underline; }
+/* line 39, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+.events .workshops .callout-primary a:active, .events .workshops .callout-primary a:focus {
+  color: #971f2d;
+  outline: none; }
+/* line 32, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+.events .sponsorship {
+  text-align: center; }
+  /* line 35, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+  .events .sponsorship img {
+    width: 11.25em;
+    max-width: 100%;
+    height: 100px; }
+  @media screen and (min-width: 40em) {
+    /* line 42, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+    .events .sponsorship .enova, .events .sponsorship .thoughbot, .events .sponsorship .braintree {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 87, /usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+      .events .sponsorship .enova:last-child, .events .sponsorship .thoughbot:last-child, .events .sponsorship .braintree:last-child {
+        margin-right: 0; }
+      /* line 45, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+      .events .sponsorship .enova img, .events .sponsorship .thoughbot img, .events .sponsorship .braintree img {
+        width: 8.125em; } }
+  @media screen and (min-width: 26.25em) {
+    /* line 53, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_events.scss */
+    .events .sponsorship .thoughtbot img {
+      width: 10.625em; } }
 
 /* line 1, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_footer.scss */
 .footer {
@@ -4081,12 +4175,26 @@ body {
     /* line 48, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index .banner .copy-wrap h1 {
       font-size: 3em; }
-/* line 56, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 52, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    .index .banner .copy-wrap .conference-cta {
+      background: rgba(250, 249, 249, 0.9);
+      padding: 1em;
+      margin-bottom: 1em; }
+      /* line 56, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+      .index .banner .copy-wrap .conference-cta h3 {
+        color: #322D2E; }
+        /* line 58, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+        .index .banner .copy-wrap .conference-cta h3 a {
+          color: #237BA5; }
+          /* line 60, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+          .index .banner .copy-wrap .conference-cta h3 a:hover, .index .banner .copy-wrap .conference-cta h3 a:visited {
+            color: #256A8B; }
+/* line 71, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
 .index #banner {
   background-image: url("/images/2013-conf/wsc-sign.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  /* line 62, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+  /* line 77, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
   .index #banner .overlay {
     position: absolute;
     top: 0px;
@@ -4095,7 +4203,7 @@ body {
     left: 0px;
     display: block;
     background-color: rgba(139, 30, 43, 0.6); }
-  /* line 68, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+  /* line 83, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
   .index #banner .copy-wrap {
     float: left;
     display: block;
@@ -4108,7 +4216,7 @@ body {
     .index #banner .copy-wrap:last-child {
       margin-right: 0; }
     @media screen and (min-width: 53.75em) {
-      /* line 68, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+      /* line 83, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
       .index #banner .copy-wrap {
         float: left;
         display: block;
@@ -4119,16 +4227,16 @@ body {
         /* line 87, /usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
         .index #banner .copy-wrap:last-child {
           margin-right: 0; } }
-    /* line 82, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 97, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner .copy-wrap h1, .index #banner .copy-wrap h2 {
       text-shadow: 1px 1px 2px #322D2E; }
-    /* line 86, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 101, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner .copy-wrap p {
       font-size: 1.3em;
       padding-top: 2em;
       text-shadow: 1px 1px 1px #322D2E; }
   @media screen and (min-width: 53.75em) {
-    /* line 93, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 108, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner .fa-caret-down {
       float: left;
       display: block;
@@ -4138,54 +4246,71 @@ body {
       /* line 87, /usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
       .index #banner .fa-caret-down:last-child {
         margin-right: 0; } }
-/* line 102, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+/* line 117, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
 .index #banner2 {
-  background-color: #237BA5;
-  border-bottom-color: #256A8B; }
-  /* line 109, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+  background-color: #faf9f9; }
+  /* line 120, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
   .index #banner2 .image-wrap {
     max-width: 100%;
     max-height: 590px;
     margin: 0;
     padding: 0; }
     @media screen and (min-width: 53.75em) {
-      /* line 109, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+      /* line 120, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
       .index #banner2 .image-wrap {
         float: left;
-        max-width: 32%; } }
-    /* line 120, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+        max-width: 31%; } }
+    /* line 131, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner2 .image-wrap img {
       max-height: 590px; }
-  /* line 125, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+  /* line 136, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
   .index #banner2 .copy-wrap {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
+    color: #322D2E;
     padding: 1em;
     height: auto; }
     /* line 87, /usr/local/var/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
     .index #banner2 .copy-wrap:last-child {
       margin-right: 0; }
-    /* line 131, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 29, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+    .index #banner2 .copy-wrap a:not(.button), .index #banner2 .copy-wrap a:not(.button):hover, .index #banner2 .copy-wrap a:not(.button):visited {
+      color: #D84455;
+      text-decoration: none; }
+    /* line 34, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+    .index #banner2 .copy-wrap a:not(.button):hover {
+      color: #971f2d;
+      text-decoration: underline; }
+    /* line 39, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/base/_typography.scss */
+    .index #banner2 .copy-wrap a:not(.button):active, .index #banner2 .copy-wrap a:not(.button):focus {
+      color: #971f2d;
+      outline: none; }
+    /* line 146, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner2 .copy-wrap h1 {
       font-size: 2.25em; }
-    /* line 132, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 147, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner2 .copy-wrap h2 {
       font-size: 2em; }
-    /* line 133, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 148, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner2 .copy-wrap h2, .index #banner2 .copy-wrap h3 {
       text-align: center; }
-    /* line 135, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    /* line 150, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
     .index #banner2 .copy-wrap p, .index #banner2 .copy-wrap h3 {
       padding: .5em 0 0 0; }
-    /* line 139, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
-    .index #banner2 .copy-wrap .header-break {
-      display: none; }
+    /* line 153, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+    .index #banner2 .copy-wrap h4 {
+      max-width: 75%;
+      margin: 0 auto; }
     @media screen and (min-width: 53.75em) {
-      /* line 142, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+      /* line 159, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
       .index #banner2 .copy-wrap .header-break {
         display: block; } }
+/* line 165, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_index.scss */
+.index .newsletter-signup #mce-EMAIL {
+  max-width: 290px;
+  margin: 10px auto; }
 
 /* line 17, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_logo.scss */
 .logo {
@@ -4221,11 +4346,13 @@ body {
 /* line 2, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_meetups.scss */
 .meetups .meetup {
   margin-bottom: 2em; }
-/* line 6, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_meetups.scss */
-.meetups ul {
-  list-style-type: disc;
-  margin-left: 1em;
-  padding-left: .5em; }
+/* line 5, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_meetups.scss */
+.meetups .social li {
+  display: inline;
+  padding-right: 10px; }
+/* line 9, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_meetups.scss */
+.meetups .social li a:hover {
+  text-decoration: none; }
 
 /* line 5, /Users/rober/Sites/writespeakcode.github.io/source/stylesheets/application/_people_list.scss */
 ul.people_list {
